@@ -2,7 +2,163 @@
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Monthly earnings -->
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Monthly earnings
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                $2250
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly spendings -->
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Monthly spendings
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                $350
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly spendings -->
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Weekly spendings
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                $25
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    <div class="row">
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-danger shadow py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-4">
+                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-3">
+                                Current account
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-4">
+                            <div class="h5 mb-2 font-weight-bold text-gray-800">
+                                Balance: 3500
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transaction Table -->
+        <div class="col-xl-8 col-md-6 mb-4">
+            <div class="card border-left-info shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Recent transactions</h5>
+                </div>
+                <div class="card-body">
+                    @* TODO: add card for each transaction up to five transactions *@
+
+                    <ul class="list-group list-group-flush">
+                        
+                        <li class="list-group-item">
+                            <div class="col text-left">
+                                <div class="font-weight-bold text-success text-uppercase">Payment to:</div>
+                                <div class="text-gray-800">Store-A</div>
+                            </div>
+                            <div class="col text-right">
+                                <div class="font-weight-bold h6">- $5</div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <div class="col text-left">
+                                <div class="font-weight-bold text-success text-uppercase">Payment to:</div>
+                                <div class="text-gray-800">Store-B</div>
+                            </div>
+                            <div class="col text-right">
+                                <div class="font-weight-bold h6">- $5</div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <div class="col text-left">
+                                <div class="font-weight-bold text-success text-uppercase">Payment to:</div>
+                                <div class="text-gray-800">Store-C</div>
+                            </div>
+                            <div class="col text-right">
+                                <div class="font-weight-bold h6">- $5</div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <div class="col text-left">
+                                <div class="font-weight-bold text-success text-uppercase">Payment to:</div>
+                                <div class="text-gray-800">Store-D</div>
+                            </div>
+                            <div class="col text-right">
+                                <div class="font-weight-bold h6">- $5</div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <div class="col text-left">
+                                <div class="font-weight-bold text-success text-uppercase">Payment to:</div>
+                                <div class="text-gray-800">Store-E</div>
+                            </div>
+                            <div class="col text-right">
+                                <div class="font-weight-bold h6">- $5</div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
